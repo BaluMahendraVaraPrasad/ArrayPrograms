@@ -1,20 +1,15 @@
-package arrays;
+package com.Array.pack;
 
 public class TwoDimArray {
-    public static void main(String[] args) {
-		int[][]a= {{1,2,3},
-				   {1,2,3},
-				   {1,2,3}};
-		int sum=0;
-		for(int[]tenp:a) {
-			for(int n:tenp) {
-				sum+=n;
-				
-				System.out.print(n+" ");
-			}
-			System.out.println();
- 		}
-		System.out.println(sum);
-		
+   public static void main(String[] args) {
+	int[][]a= {{1,2,3},
+			  {4,5,6},
+			  {7,8,9}};
+	for(int[]temp:a) {
+		for(int n:temp) {
+			System.out.print(n+"\t");
+		}
+		System.out.println();
 	}
+}
 }
